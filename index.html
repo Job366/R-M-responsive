@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER  -->
+        <div class="header_wrapper">    
+            <div class="header_items">
+                <div class="header_logo">
+                    <a href=""><img class="logo" src="/img/Rick_and_Morty.svg" alt="logo"></a>
+                </div>
+                <div class="search_box">
+                    <input class="search_field" type="search_field" placeholder="Search...">
+                        <label class="search_button">
+                            <span class="search_icon fas fa-search"></span>
+                        </label>
+                </div>
+                <div id="nav_item">
+                    <ul class="nav_buttons">
+                        <li class="nav_btn"><a href="#">Button</a></li>
+                        <li class="nav_btn"><a href="#">Button</a></li>
+                        <li class="nav_btn"><a href="#">Button</a></li>
+                        <li class="nav_btn"><a href="#">Button</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END OF HEADER  -->
+
+               <!-- CONTENT  -->
+        <div class="content_wrapper"> <!-- content_box_wrapper  -->
+            <div class="content_box">
+                <h2>Welcome to the Rick and Morty Wiki!</h2>
+            
+                               <!-- CONTENT COLUMN -->
+                <div class="content_column">
+                    <div class="column_container">
+                    <a href="/personajes.html">
+                        <figure>
+                            <img src="img/personajes.jpg">
+                                <div class="capa">
+                                    <h3>Personajes</h3>
+                                    <p>¡Anímate a repasar con nosotros algunos de lo más alocados,
+                                        irreverentes, absurdos y maravillosos personajes de la mejor serie de 
+                                        animación!</p>
+                                </div>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="/img/episodios.jpg">
+                                <div class="capa">
+                                    <h3>Episodios</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                                </div>
+                        </figure>
+                    </a>
+                     <a href="#">
+                        <figure>
+                            <img src="img/temporadas.png">
+                                <div class="capa">
+                                    <h3>Temporadas</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                                </div>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="/img/lugares.jpg">
+                                <div class="capa">
+                                    <h3>Lugares</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero!</p>
+                                </div>
+                        </figure>
+                    </a>
+                    </div>
+                </div>
+                            <!--END OF CONTENT COLUMN -->
+
+                <div class="details_wrapper">
+                    <div class="details_img">
+                        <a href="#"><img src="/img/200_200.jpeg" alt="result_img"></a>
+                    </div>
+                    <div class="details_description">
+                        <h4>Details...</h4>
+                        <p>
+                            Rick y Morty (en inglés: Rick and Morty) es una serie de televisión estadounidense 
+                            de animación para adultos creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim. 
+                            La serie sigue las desventuras de un científico, Rick, y su fácilmente influenciable 
+                            nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los viajes espaciales, 
+                            temporales e intergalácticos. Roiland es el encargado de darle voz a Rick y a Morty, 
+                            la serie también incluye las voces de Chris Parnell, Spencer Grammer y Sarah Chalke.
+                        </p>
+                            La serie se originó por un cortometraje rudimentario animado por Roiland para el 
+                            festival de cine Channel 101 llamado Doc and Mharti, una parodia de los principales 
+                            protagonistas de Back to the Future. Cuando la cadena NBC despidió a Harmon en 2013 
+                            por discusiones entre él y los ejecutivos de la serie que había creado, Community, él 
+                            y Roiland desarrollaron una serie basada en los personajes ya creados por Roiland.
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="details_favorite-btn">
+                        <a onclick="Toggle1()" id="details_heart-btn" href="#"><i class="results_heart-btn fas fa-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END OF CONTENT  -->
+
+        <!-- SIDEBAR -->
+
+        <div class="sidebar">
+            <div class="widget_box_wrapper">
+                <h2>CHARACTERS</h2>
+                <div class="widget_box">
+
+                    <!-- FAVORITE ITEM -->
+                     <div class="widget_item">
+                        <img class="favorite_avatar" src="/img/favorite/fav1.png" alt="favorite_avatar">
+                        <div class="favorite_btn">
+                            <span>
+                                <i class="favorite_heart-btn fas fa-heart" title="Quitar de mis favoritos"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                     <div class="widget_item">
+                        <img class="favorite_avatar" src="/img/favorite/fav2.png" alt="favorite_avatar">
+                        <div class="favorite_btn">
+                            <span>
+                                <i class="favorite_heart-btn fas fa-heart" title="Quitar de mis favoritos"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                     <div class="widget_item">
+                        <img class="favorite_avatar" src="/img/favorite/fav3.jpg" alt="favorite_avatar">
+                        <div class="favorite_btn">
+                            <span>
+                                <i class="favorite_heart-btn fas fa-heart" title="Quitar de mis favoritos"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                     <div class="widget_item">
+                        <img class="favorite_avatar" src="/img/favorite/fav4.jpg" alt="favorite_avatar">
+                        <div class="favorite_btn">
+                            <span>
+                                <i class="favorite_heart-btn fas fa-heart" title="Quitar de mis favoritos"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                     <div class="widget_item">
+                        <img class="favorite_avatar" src="/img/favorite/fav10.jpg" alt="favorite_avatar">
+                        <div class="favorite_btn">
+                            <span>
+                                <i class="favorite_heart-btn fas fa-heart" title="Quitar de mis favoritos"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                     <div class="widget_item">
+                        <img class="favorite_avatar" src="/img/favorite/fav6.jpg" alt="favorite_avatar">
+                        <div class="favorite_btn">
+                            <span>
+                                <i class="favorite_heart-btn fas fa-heart" title="Quitar de mis favoritos"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                     <div class="widget_item">
+                        <img class="favorite_avatar" src="/img/favorite/fav7.png" alt="favorite_avatar">
+                        <div class="favorite_btn">
+                            <span>
+                                <i class="favorite_heart-btn fas fa-heart" title="Quitar de mis favoritos"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                     <div class="widget_item">
+                        <img class="favorite_avatar" src="/img/favorite/fav8.png" alt="favorite_avatar">
+                        <div class="favorite_btn">
+                            <span>
+                                <i class="favorite_heart-btn fas fa-heart" title="Quitar de mis favoritos"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                     <div class="widget_item">
+                        <img class="favorite_avatar" src="/img/favorite/fav9.jpg" alt="favorite_avatar">
+                        <div class="favorite_btn">
+                            <span>
+                                <i class="favorite_heart-btn fas fa-heart" title="Quitar de mis favoritos"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!--END OF FAVORITE ITEM -->
+			       
+                </div>
+
+                <div class="next_previous_button">
+                     <a href="#" class="previous round">&#8249;</a>
+		            <a href="#" class="next round">&#8250;</a>
+                </div>
+
+                <div class="widget_block">
+                    <h2>COMMUNITY</h2>
+                    <div class="widget_block-list">
+                        <ul>
+                            <li><a class="widget_block-elemnt" href="#">Facebook Community</a></li>
+                            <li><a class="widget_block-elemnt" target="_blank" href="https://rickandmorty.fandom.com/wiki/Rickipedia">Wiki Fandom</a></li>
+                            <li><a class="widget_block-elemnt" href="#">Discord</a></li>
+                            <li><a class="widget_block-elemnt" href="#">Element</a></li>
+                            <li><a class="widget_block-elemnt" href="#">Element</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <!--END OF SIDEBAR  -->
+
+        <!-- FOOTER  -->
+
+
+        <!-- END OF FOOTER -->
+    </div>
+</body>
+</html>
